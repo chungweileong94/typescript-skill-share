@@ -1,14 +1,20 @@
+/**
+ * Type Guard example 1
+ * 
+ * Types that contain common/reference property
+ */
+
 type Person = {
   name: string;
 };
 
 type Parent = Person & {
-  role: "parent";
+  role: "parent"; // <-- reference property
   work: string;
 };
 
 type Child = Person & {
-  role: "child";
+  role: "child"; // <-- reference property
   school: string;
 };
 
